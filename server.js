@@ -15,12 +15,6 @@ var articleone = {
                   `
 };
 
-var content={
-    title : 'title',
-    heading: 'heading',
-    date: 'date',
-    content: 'content',
-};
 
 function createTemplate(data){
     var title=data.title;
