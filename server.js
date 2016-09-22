@@ -6,7 +6,7 @@ var app = express();
 
 var articles=
 {
-    articleone : {
+    'articleone' : {
     title:'Article One|Allan Jojo',
     heading:'Article One',
     date:'22 Sep,2016',
@@ -16,7 +16,7 @@ var articles=
             <p>This is my first article.This is my first article.This is my first article.This is my first article.This is my first article     .This is my first article.This is my first article.</p>
                   `
     },
-    articletwo : {
+    'articletwo': {
     title:'Article Two|Allan Jojo',
     heading:'Article TWo',
     date:'20 Sep,2016',
@@ -24,7 +24,7 @@ var articles=
             <p>This is my second article.</p>
                   `
     },
-    articlethree : {
+    'articlethree' : {
     title:'Article Three|Allan Jojo',
     heading:'Article Three',
     date:'5 Sep,2016',
