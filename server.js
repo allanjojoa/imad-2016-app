@@ -64,7 +64,7 @@ function createTemplate(data){
                 
                 
                 `;
-            return htmlTemplat;
+            return htmlTemplate;
 }
 app.use(morgan('combined'));
 
