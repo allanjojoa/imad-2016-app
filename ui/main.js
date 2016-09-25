@@ -1,6 +1,6 @@
 console.log('Loaded!');
 
-var button =documnet.getElmentById('counter');
+var button =document.getElmentById('counter');
 
 
 button.onclick = function(){
@@ -12,7 +12,7 @@ button.onclick = function(){
             
             if (request.status === 200){
                 var counter = request.responseText;
-                var span = documnet.getElementById('count');
+                var span = document.getElementById('count');
                 span.innerHTML = counter.toString();
             }
         }
