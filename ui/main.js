@@ -8,10 +8,10 @@ button.onclick = function(){
     
     request.onreadystatechange = function(){
         
-        if (request.readySatae === XMLHttpRequest.DONE){
+        if (request.readyState === XMLHttpRequest.DONE){
             
             if (request.status === 200){
-                var counter = request.responeTExt;
+                var counter = request.responseText;
                 var span = documnet.getElementById('count');
                 span.innerHTML = counter.toString();
             }
