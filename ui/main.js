@@ -1,16 +1,24 @@
 console.log('Loaded!');
 
-//chnage HTML
-var element=document.getElementById('main-text');
-element.innerHTML='New Value';
+var button =documnet.getElmentById('counter');
 
-//move image
-var img=document.getElementById('madi');
-var marginLeft = 0;
-function moveRight(){
-    marginLeft=marginLeft + 10;
-    img.style.marginLeft=marginLeft+'px';
-};
-img.onclick=function(){
-    var interval =  setInterval(moveRight,50);
+
+button.onclick = function(){
+    var request = new XMLHttpRequest();
+    
+    request.onreadystatechange = function(){
+        
+        if (request.readySatae === XMLHttpRequest.DONE){
+            
+            if (request.status === 200){
+                var counter = request.responeTExt;
+                var span = documnet.getElementById('count');
+                span.innerHTML = counter.toString();
+            }
+        }
+    }
+
+
+    request.open('GET','http://allanjojoa.imad.hasura-app.io/counter');
+    request.send(null);
 };
