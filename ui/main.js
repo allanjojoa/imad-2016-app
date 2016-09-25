@@ -16,7 +16,7 @@ button.onclick = function(){
                 span.innerHTML = counter.toString();
             }
         }
-    }
+    };
 
 
     request.open('GET','http://allanjojoa.imad.hasura-app.io/counter');
