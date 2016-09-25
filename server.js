@@ -3,7 +3,7 @@ var morgan = require('morgan');
 var path = require('path');
 
 var app = express();
-
+var counter=0;
 var articles=
 {
     'article-one' : {
@@ -102,7 +102,6 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-var counter=0;
 app.get('/counter', function (req,res){
     counter=counter+1;
     res.send(counter.toString());
