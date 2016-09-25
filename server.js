@@ -13,7 +13,6 @@ var articles=
     content:`
             <p>This is my first article.This is my first article.This is my first article.This is my first article.This is my first article    .This is my first article.This is my first article.</p>
             <p>This is my first article.This is my first article.This is my first article.This is my first article.This is my first article     .This is my first article.This is my first article.</p>
-            <p>This is my first article.This is my first article.This is my first article.This is my first article.This is my first article     .This is my first article.This is my first article.</p>
                   `
     },
     'article-two': {
@@ -103,7 +102,11 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-
+var counter=0;
+app.get('/counter', function (req,res){
+    counter=counter+1;
+    res.send(counter.toString());
+});
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
